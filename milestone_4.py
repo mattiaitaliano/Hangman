@@ -18,8 +18,11 @@ class Hangman():
             for i in range(len(self.word)):
                 if guess == self.word[i].lower():
                     self.word_guessed[i] = guess
-                print(self.word_guessed)
             self.num_letters -= 1
+        else:
+            self.num_lives -= 1
+            print(f"Sorry, {guess} is not in the word.")
+            print(f"You have {self.num_lives} lives left.")
 
     
     def ask_for_input(self):
