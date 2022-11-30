@@ -36,10 +36,10 @@ guess = input("Enter a single letter: ")
 
 At this point, we want to check if the user respected the assignment. Thanks to the first IF we both check if the length of the input is equal to one (single letter) and, at the same time, if the guess is a number or a character(letter).
 
-I use the len() function to discover the input lenght and the isdigit() function to understand if the guess is a number or a character. (isdigit() is equal to True when the parameter is a number).
+I use the len() function to discover the input lenght and the isalpha() function to understand if the guess is a number or a character. (isalpha() is equal to True when the parameter is a letter).
 
 ```
-if len(guess) == 1 and guess.isdigit() == False:
+if len(guess) == 1 and guess.isalpha():
 print("Good guess!")
 else:
 print("Oops! That is not a valid input.")
