@@ -18,7 +18,7 @@ class Hangman():
             for i in range(len(self.word)):
                 if guess == self.word[i].lower():
                     self.word_guessed[i] = guess
-                    self.num_letters -= 1
+            self.num_letters -= 1
             
         else:
             self.num_lives -= 1
