@@ -21,6 +21,7 @@ class Hangman():
                     self.word_guessed[i] = guess
                 
                 i =+ 1
+            print(self.word_guessed)
             self.num_letters -= 1
 
     
@@ -32,10 +33,10 @@ class Hangman():
             elif guess in self.list_of_guesses:
                 print("You already tried that letter!")
             else:
+                self.check_guess(guess)
+                self.list_of_guesses.append(guess)
                 break
-
-        self.check_guess(guess)
-        self.list_of_guesses.append(guess)
+        
 
 
 test = Hangman(["Banana", "Strawberry", "Apple"])
