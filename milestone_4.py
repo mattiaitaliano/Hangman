@@ -24,10 +24,8 @@ class Hangman():
             elif guess in self.list_of_guesses:
                 print("You already tried that letter!")
             else:
-                break
-
-        self.check_guess(guess)
-        self.list_of_guesses.append(guess)
+                self.check_guess(guess)
+                self.list_of_guesses.append(guess)
 
 
 test = Hangman(["Banana", "Strawberry", "Apple"])
