@@ -17,9 +17,10 @@ class Hangman():
             print(f"Good guess! {guess} is in the word.")
             i = 0
             for letter in self.word:
-                i =+ 1
                 if guess == letter:
                     self.word_guessed[i] = guess
+                
+                i =+ 1
             self.num_letters -= 1
 
     
