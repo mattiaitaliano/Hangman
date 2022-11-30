@@ -98,3 +98,13 @@ and
                 self.list_of_guesses.append(guess)
                 break
 ```
+
+# Final Consideration
+
+## Logic behind the project
+
+The project follow a logic belonging to the utilization of the class Hangman where you structure all the game. As written before, the class inizialize all the attributes needed for running the game, such as randomly choice a word within a list, handle the number of lives and the number of character missed and so on.
+
+Moreover, in this class are defined two methods that are used to give us the opportunity to input a letter, check if it is inside the word, and return us the result of our choice.
+
+Last, after created the "game" object from Hangman's class, we are able to run the game by using all of this functions and attributes until we either win or loose.
