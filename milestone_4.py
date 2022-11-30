@@ -9,4 +9,4 @@ class Hangman():
         self.word:str = random.choice(self.word_list)
         self.word_guessed:list = ["_" for _ in range(0,len(self.word))]
         self.num_letters:int = len(set(self.word))
-        self.list_of_guesses:int = 0
+        self.list_of_guesses:list = []
